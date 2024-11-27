@@ -1,0 +1,41 @@
+*{
+    font-family: "Parkinsans", sans-serif;
+}
+header{
+    background-color: #5B2C6F;
+}
+.nav-item a{
+    color: #C0C0C0
+}
+.perfil{
+    
+}
+.btn-proyecto{
+    background-color: #B39CD0;
+}
+.btn-proyecto a{
+    text-decoration: none;
+    color: #0066FF;
+}
+.card .card-title{
+    color: #5B2C6F;
+}
+#contacto{
+    background-color: aquamarine;
+    color: #1C1C1C;
+}
+#btn-contacto{
+    background-color: #C0C0C0;
+    color: #0066FF;
+}
+footer li a i{
+    color: #5B2C6F;
+}
+footer p{
+    color: #B39CD0;
+}
+footer p a{
+    text-decoration: none;
+    color: #1C1C1C;
+}
+    
