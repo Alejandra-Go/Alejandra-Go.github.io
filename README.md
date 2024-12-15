@@ -21,6 +21,7 @@ ______
 
 ### Vista Previa    
 ![Proyecto](assets/CapturaPortafolio.png)
+![Proyecto](assets/CapturaPortafolio2.png)
 
 ### *Espero pronto saber de ti*
 *Correo*
