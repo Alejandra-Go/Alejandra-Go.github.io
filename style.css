@@ -27,19 +27,30 @@ header a{
     background-color: #5B2C6F;
     color: #FFFFFF;
 }
-.btn-proyecto{
+.btn-proyecto {
+    color: #4a235a !important; /* púrpura oscuro uniforme */
+    border-color: #4a235a;
     background-color: #B39CD0;
-}
-.btn-proyecto a{
+    font-weight: 500;
     text-decoration: none;
-    color: #1C1C1C;
 }
+
+.btn-proyecto:hover {
+    color: white !important;
+    background-color: #4a235a !important;
+    border-color: #4a235a !important;
+}
+
 .card .card-title{
     color: #5B2C6F;
+}
+#testimonios{
+    scroll-margin-top: 10px;
 }
 #contacto{
     background-color: #B39CD0;
     color: #1C1C1C;
+    scroll-margin-top: 10px;
 }
 #btn-contacto{
     background-color: #FFFFFF;
@@ -55,4 +66,7 @@ footer p a{
     text-decoration: none;
     color: #1C1C1C;
 }
+html {
+    scroll-behavior: smooth;
+  } 
     
