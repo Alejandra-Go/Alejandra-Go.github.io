@@ -11,7 +11,7 @@ header a{
     color: #FFFFFF;
 }
 #boton-perfil{
-    background-color: #C0C0C0;
+    background-color: #C8A2C8;
 }
 .nav-item a:hover{
     color: #C0C0C0;
@@ -20,7 +20,7 @@ header a{
     color: #5B2C6F;
 }
 .boton-cv{
-    background-color: #B39CD0;
+    background-color: #C8A2C8;
     color: #1C1C1C;
 }
 .caja-habilidades{
@@ -29,7 +29,7 @@ header a{
 }
 .btn-proyecto {
     color: #4a235a !important; /* púrpura oscuro uniforme */
-    border-color: #4a235a;
+    border-color: #C8A2C8;
     background-color: #B39CD0;
     font-weight: 500;
     text-decoration: none;
@@ -38,7 +38,7 @@ header a{
 .btn-proyecto:hover {
     color: white !important;
     background-color: #4a235a !important;
-    border-color: #4a235a !important;
+    border-color: #C8A2C8 !important;
 }
 
 .card .card-title{
@@ -51,6 +51,7 @@ header a{
     background-color: #B39CD0;
     color: #1C1C1C;
     scroll-margin-top: 10px;
+    border-color: #C8A2C8;
 }
 #btn-contacto{
     background-color: #FFFFFF;
