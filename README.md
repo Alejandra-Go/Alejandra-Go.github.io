@@ -1,10 +1,11 @@
 ## Portafolio de proyectos
 
-¡Hola! ***Soy Alejandra González***, soy analista de datos y desarrolladora web Jr. Apasionada por la tecnología, aquí encontrarás información sobre mí.
+¡Hola! ***Soy Alejandra González***, soy estudiante de séptimo semestre de la Ingeniería en Sistemas Computacionales con una Licenciatura en Ciencias Nutricionales y una Maestría en Nutrición Clínica. Actualmente enfocada en análisis de datos y limpieza de información, aquí encontrarás información sobre mí. 
 
 ______
 ### El proyecto cuenta con las secciones de:
 
+- 🤓 Sobre mí
 - 💪🏽 Habilidades 
 - 📋 Proyectos
 - 👩🏽 Testimonios
@@ -21,7 +22,11 @@ ______
 
 ### Vista Previa    
 ![Inicio](assets/CapturaPortafolio.png)
+![Me](assets/CapturaPortafolio1.png)
 ![Habilidades](assets/CapturaPortafolio2.png)
+
+### Link
+https://alejandra-go.github.io/
 
 ### *Espero pronto saber de ti*
 *Correo*
