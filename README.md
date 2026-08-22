@@ -37,7 +37,7 @@ Este repositorio contiene mi portafolio web personal, donde presento mis proyect
 
 | Sobre mí | Habilidades técnicas | Proyectos destacados |
 | :---: | :---: | :---: |
-| ![Sobre mí](assets/CapturaPortafolio.png) | ![Habilidades técnicas](assets/CapturaPortafolio1.png) | ![Proyectos destacados](assets/CapturaPortafolio2.png) |
+| ![Sobre mí](assets/Captura_Sobre_Mi.png) | ![Habilidades técnicas](assets/Captura_Habilidades.png) | ![Proyectos destacados](assets/Captura_Proyectos.png) |
 
 ---
 
