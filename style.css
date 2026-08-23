@@ -190,8 +190,21 @@ html {
 }
 
 .project-img {
-  height: 200px;
-  object-fit: cover;
+    width: 100%;
+    height: 380px;
+    object-fit: contain;
+    object-position: center;
+    background-color: #f8f9fa;
+    padding: 8px;
+    border-radius: 12px 12px 0 0;
+}
+
+.project-img.project-img-contain {
+    height: 340px;
+    object-fit: contain;
+    object-position: center;
+    background-color: #f8f9fa;
+    padding: 14px;
 }
 
 .project-placeholder {
