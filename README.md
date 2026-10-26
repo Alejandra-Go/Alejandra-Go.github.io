@@ -1,6 +1,6 @@
 # 📊 Portafolio Profesional — Alejandra González Madrid
 
-¡Hola! Soy **Alejandra González Madrid**, estudiante de Ingeniería en Sistemas Computacionales con trasfondo profesional en ciencias clínicas. Me especializo en la auditoría, limpieza, ingeniería de datos (ETL) y Business Intelligence.
+¡Hola! Soy **Alejandra González Madrid**, estudiante del último cuatrimestre de la Ingeniería en Sistemas Computacionales con trasfondo profesional en ciencias clínicas. Actualmente busco una oportunidad para realizar mis Prácticas Profesionales, con el objetivo de aplicar mis conocimientos y continuar desarrollándome en el sector tecnológico.
 
 🌐 **Sitio Web:** [alejandra-go.github.io](https://alejandra-go.github.io/)
 

@@ -6,12 +6,12 @@ var typewriter = new Typewriter(app, {
 });
 
 typewriter
-    .typeString('Practicante de Analista de Datos')
+    .typeString('Pasante de Ingeniería en Sistemas Computacionales')
     .pauseFor(2000)
     .deleteAll()
-    .typeString('Especialista en ETL & Data Quality')
+    .typeString('Prácticas Profesionales')
     .pauseFor(2000)
     .deleteAll()
-    .typeString('Desarrollo de Dashboards & BI')
+    .typeString('Me apasiona investigar, analizar información y comprender cómo funcionan las cosas')
     .pauseFor(2000)
     .start();
