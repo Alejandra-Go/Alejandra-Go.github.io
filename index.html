@@ -27,130 +27,451 @@
 </head>
 
 <body>
+   
+<!-- Navegación principal -->
+<header class="navbar navbar-expand-lg sticky-top custom-navbar">
+  <div class="container">
 
-  <!-- Navegación Sticky Minimalista -->
-  <header class="navbar navbar-expand-lg sticky-top custom-navbar">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-        <i class="bi bi-bar-chart-line-fill text-accent fs-4"></i>
-        <span class="fw-bold fs-5">Alejandra González Madrid</span>
-      </a>
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav gap-lg-3 text-center">
-          <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
-          <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
-          <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-        </ul>
+    <!-- Identidad -->
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <i class="bi bi-bar-chart-line-fill text-accent fs-4"
+         aria-hidden="true"></i>
+      <span class="fw-bold fs-5">Alejandra González Madrid</span>
+    </a>
+
+    <!-- Menú móvil -->
+    <button
+      class="navbar-toggler border-0"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Abrir menú de navegación">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Enlaces de navegación -->
+    <div class="collapse navbar-collapse justify-content-end"
+         id="navbarNav">
+      
+    <ul class="navbar-nav gap-lg-3 text-center align-items-lg-center">
+    <li class="nav-item">
+      <a class="nav-link" href="#sobre-mi" data-i18n="nav.about">Sobre mí</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#habilidades" data-i18n="nav.skills">Habilidades</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#proyectos" data-i18n="nav.projects">Proyectos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#testimonios" data-i18n="nav.testimonials">Testimonios</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#contacto" data-i18n="nav.contact">Contacto</a>
+    </li>
+  </ul>
+
+      <!-- Selector de idioma -->
+      <div class="language-switcher d-flex align-items-center
+                  justify-content-center ms-lg-4 mt-3 mt-lg-0 gap-2"
+           role="group"
+           aria-label="Seleccionar idioma">
+
+        <i class="bi bi-globe2 text-accent"
+           aria-hidden="true"></i>
+
+        <button type="button"
+                id="lang-es"
+                class="lang-btn active"
+                aria-pressed="true"
+                lang="es">
+          ES
+        </button>
+
+        <span class="text-muted" aria-hidden="true">|</span>
+
+        <button type="button"
+                id="lang-en"
+                class="lang-btn"
+                aria-pressed="false"
+                lang="en">
+          EN
+        </button>
+
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- Hero Section -->
+<section id="sobre-mi" class="hero-section py-5">
+  <div class="container py-4">
+    <div class="row align-items-center g-5">
+
+      <!-- Fotografía -->
+      <div class="col-lg-4 text-center">
+        <div class="profile-img-container">
+          <img
+            src="assets/Fotoale.png"
+            alt="Foto de perfil de Alejandra González Madrid"
+            class="profile-img"
+            data-i18n-alt="hero.photo"
+          >
+        </div>
+      </div>
+
+      <!-- Presentación profesional -->
+      <div class="col-lg-8">
+
+        <span class="badge-role mb-2">
+          <i class="bi bi-briefcase-fill me-1" aria-hidden="true"></i>
+          <span data-i18n="hero.available">
+            Disponible para Prácticas Profesionales
+          </span>
+        </span>
+
+        <h1 class="display-5 fw-extrabold text-dark mt-2 mb-1">
+          Alejandra González Madrid
+        </h1>
+
+        <h2 class="h4 fw-bold text-accent mb-2"
+            data-i18n="hero.role">
+          Pasante de Ingeniería en Sistemas Computacionales
+        </h2>
+
+        <p class="fs-5 text-secondary mb-4"
+           data-i18n="hero.subtitle">
+          Prácticas Profesionales
+        </p>
+
+        <!-- Párrafo 1 -->
+        <p class="lead text-secondary mb-3"
+           data-i18n="hero.intro">
+          Soy estudiante del último cuatrimestre de
+          <strong>Ingeniería en Sistemas Computacionales</strong>
+          en la Universidad Virtual del Estado de Guanajuato
+          (UVEG). Actualmente busco una oportunidad para
+          realizar mis <strong>Prácticas Profesionales</strong>,
+          donde pueda aplicar mis conocimientos, adquirir
+          experiencia en proyectos tecnológicos y continuar
+          desarrollándome en el sector de tecnologías de
+          la información.
+        </p>
+
+        <!-- Párrafo 2 -->
+        <p class="text-secondary mb-3"
+           data-i18n="hero.experience">
+          Cuento con experiencia profesional en atención
+          al cliente, gestión de información comercial,
+          procesos administrativos y elaboración de reportes
+          e indicadores de desempeño (KPIs), utilizando
+          herramientas como <strong>Excel Avanzado,
+          Power Query, sistemas CRM y ERP</strong>.
+          Durante mi formación académica también he
+          adquirido conocimientos en programación,
+          bases de datos, desarrollo web y análisis de datos,
+          utilizando tecnologías como
+          <strong>Python, SQL, MongoDB, HTML, CSS
+          y JavaScript</strong>.
+        </p>
+
+        <!-- Párrafo 3 -->
+        <p class="text-secondary mb-4"
+           data-i18n="hero.interests">
+          Tengo especial interés en proyectos relacionados
+          con la gestión, transformación y análisis de datos,
+          aunque estoy abierta a desarrollarme en otras
+          áreas de tecnología. Además, soy
+          <strong>Licenciada en Ciencias Nutricionales</strong>
+          y tengo una <strong>Maestría en Nutrición Clínica</strong>,
+          formación que complementa mi perfil tecnológico
+          con experiencia en investigación, análisis de
+          información y resolución de problemas desde
+          una perspectiva interdisciplinaria.
+        </p>
+
+        <!-- Botones -->
+        <div class="d-flex flex-wrap gap-3">
+
+          <a href="#proyectos"
+             class="btn btn-primary-custom">
+            <i class="bi bi-folder2-open me-2"
+               aria-hidden="true"></i>
+            <span data-i18n="hero.projects">
+              Ver proyectos
+            </span>
+          </a>
+
+          <a href="assets/CV_Pasante_AlejandraGonzález.pdf"
+             class="btn btn-secondary-custom"
+             download>
+            <i class="bi bi-file-earmark-arrow-down me-2"
+               aria-hidden="true"></i>
+            <span data-i18n="hero.cv">
+              Descargar CV
+            </span>
+          </a>
+
+          <a href="https://github.com/Alejandra-Go"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="btn btn-secondary-custom">
+            <i class="bi bi-github me-2"
+               aria-hidden="true"></i>
+            GitHub
+          </a>
+
+        </div>
       </div>
     </div>
-  </header>
+  </div>
+</section>
+    
+<!-- Habilidades y Herramientas -->
+<section id="habilidades" class="py-5 bg-light-custom">
+  <div class="container py-4">
 
-  <main>
-    <!-- Hero Section -->
-    <section id="sobre-mi" class="hero-section py-5">
-      <div class="container py-4">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-4 text-center">
-            <div class="profile-img-container">
-              <img src="assets/Fotoale.png" alt="Foto de perfil de Alejandra González Madrid" class="profile-img">
-            </div>
+    <div class="text-center mb-5">
+      <h2 class="section-title" data-i18n="skills.title">Habilidades y Herramientas</h2>
+      <p class="text-muted" data-i18n="skills.subtitle">
+        Conocimientos en programación, desarrollo web, bases de datos
+        y gestión de información, complementados con experiencia
+        profesional y habilidades para resolver problemas tecnológicos.
+      </p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- 1. Programación y desarrollo web -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="skill-card h-100 p-4">
+          <div class="skill-icon mb-3">
+            <i class="bi bi-code-slash" aria-hidden="true"></i>
           </div>
-          <div class="col-lg-8">
-            <span class="badge-role mb-2"><i class="bi bi-briefcase-fill me-1"></i> Disponible para Prácticas Profesionales</span>
-            <h1 class="display-5 fw-extrabold text-dark mt-2 mb-1">Alejandra González Madrid</h1>
-            <h2 id="app" class="typewriter-text mb-3"></h2>
-            
-            <p class="lead text-secondary mb-3">
-              Soy estudiante del último cuatrimestre de la <strong>Ingeniería en Sistemas Computacionales</strong>. Anteriormente me desarrollé en el sector salud. Soy Licenciada en Ciencias Nutricionales y tengo una Maestría en Nutrición Clínica, lo que me permitió adquirir experiencia en análisis de información clínica, investigación y resolución de problemas. Actualmente busco una oportunidad para realizar mis <strong>Prácticas Profesionales</strong>, con el objetivo de aplicar mis conocimientos y continuar desarrollándome en el sector tecnológico.
-            </p>
-            <p class="text-muted mb-4">
-              Cuento con experiencia en atención al cliente, gestión de información comercial, procesos administrativos y elaboración de reportes e indicadores de desempeño (KPIs), utilizando herramientas como Excel Avanzado, Power Query, Sage Sale Management y sistemas ERP. Esta experiencia me ha permitido desarrollar habilidades para organizar, depurar y transformar datos operativos en información útil para la toma de decisiones.
-            </p>
-            
-            <div class="d-flex flex-wrap gap-3">
-              <a target="_blank" href="assets/CV_Pasante_AlejandraGonzález.pdf" class="btn btn-portfolio">
-              <i class="bi bi-file-earmark-pdf-fill me-2"></i>Ver CV
-              </a>
-              <a href="#proyectos" class="btn btn-portfolio">
-              <i class="bi bi-folder-symlink-fill me-2"></i>Explorar Proyectos
-              </a>
-            </div>
-          </div>
+          <h3 class="h5 fw-bold mb-3" data-i18n="skills.programming">Programación y desarrollo web</h3>
+          <ul class="list-unstyled text-secondary">
+            <li class="mb-2">
+              <i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>
+              <span data-i18n="skills.python_js">Python y JavaScript</span>
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>
+              <span data-i18n="skills.html_css">HTML5, CSS3 y Bootstrap</span>
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>
+              <span data-i18n="skills.frontend">Desarrollo frontend</span>
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>
+              <span data-i18n="skills.rest">Integración de APIs REST</span>
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>
+              <span data-i18n="skills.dom">Manipulación del DOM</span>
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>
+              <span data-i18n="skills.json">JSON y Fetch API</span>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
 
-    <!-- Habilidades y Herramientas -->
-    <section id="habilidades" class="py-5 bg-light-custom">
-      <div class="container py-4">
-        <div class="text-center mb-5">
-          <h2 class="section-title">Habilidades y Herramientas</h2>
-          <p class="text-muted">Stack tecnológico enfocado en reportes, rendimiento, procesos, producto e inteligencia de negocios</p>
-        </div>
-
-          <div class="row g-4">
-          <!-- Columna 1 -->
-          <div class="col-md-4">
-            <div class="skill-card h-100 p-4">
-              <div class="skill-icon mb-3"><i class="bi bi-database-fill-gear"></i></div>
-              <h3 class="h5 fw-bold mb-3">Habilidades blandas</h3>
-              <ul class="list-unstyled text-secondary">
-                <li class="mb-2"><i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>Atención al cliente</li>
-                <li class="mb-2"><i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>Comunicación eficiente</li>
-                <li class="mb-2"><i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>Resolución de problemas</li>
-                <li class="mb-2"><i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>Pensamiento analítico</li>
-                <li class="mb-2"><i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>Aprendizaje continuo</li>
-                <li class="mb-2"><i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>Atención al detalle</li>
-              </ul>
-            </div>
+      <!-- 2. Bases de datos -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="skill-card h-100 p-4">
+          <div class="skill-icon mb-3">
+            <i class="bi bi-database-fill-gear" aria-hidden="true"></i>
           </div>
-
-          <!-- Columna 2 -->
-          <div class="col-md-4">
-            <div class="skill-card h-100 p-4">
-              <div class="skill-icon mb-3"><i class="bi bi-bar-chart-line-fill"></i></div>
-              <h3 class="h5 fw-bold mb-3">Habilidades técnicas</h3>
-              <ul class="list-unstyled text-secondary">
-                <li class="mb-2"><i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>Gestión de relaciones con el cliente (CRM)</li>
-                <li class="mb-2"><i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>Planificación de recursos empresariales (ERP)</li>
-                <li class="mb-2"><i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>Limpieza de bases de datos</li>
-                <li class="mb-2"><i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>Generación de reportes de KPIs</li>
-                <li class="mb-2"><i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>Desarrollo frontend</li>
-                <li class="mb-2"><i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>Gestión de proyectos</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Columna 3 -->
-          <div class="col-md-4">
-            <div class="skill-card h-100 p-4">
-              <div class="skill-icon mb-3"><i class="bi bi-code-slash"></i></div>
-              <h3 class="h5 fw-bold mb-3">Herramientas</h3>
-              <ul class="list-unstyled text-secondary">
-                <li class="mb-2"><i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>SQL (PostgreSQL, MySQL, MariaDB)</li>
-                <li class="mb-2"><i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>Python (Pandas, NumPy, Matplotlib)</li>
-                <li class="mb-2"><i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>NoSQL (MongoDB)</li>
-                <li class="mb-2"><i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>Excel avanzado</li>
-                <li class="mb-2"><i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>CSS, HTML, JavaScript</li>
-                <li class="mb-2"><i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>Metodologías ágiles (SCRUM)</li>
-              </ul>
-            </div>
-          </div>
+          <h3 class="h5 fw-bold mb-3" data-i18n="skills.databases">Bases de datos</h3>
+          <ul class="list-unstyled text-secondary">
+            <li class="mb-2">
+              <i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>
+              <span data-i18n="skills.sql">SQL y consultas relacionales</span>
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>
+              <span data-i18n="skills.db_engines">PostgreSQL, MySQL y MariaDB</span>
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>
+              <span data-i18n="skills.mongodb">MongoDB (NoSQL)</span>
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>
+              <span data-i18n="skills.modeling">Modelado de datos</span>
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>
+              <span data-i18n="skills.joins">JOINs y subconsultas</span>
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>
+              <span data-i18n="skills.filtering">Filtrado y agregaciones</span>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
+
+      <!-- 3. Análisis y gestión de datos -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="skill-card h-100 p-4">
+          <div class="skill-icon mb-3">
+            <i class="bi bi-bar-chart-line-fill" aria-hidden="true"></i>
+          </div>
+          <h3 class="h5 fw-bold mb-3" data-i18n="skills.analysis">Análisis y gestión de datos</h3>
+          <ul class="list-unstyled text-secondary">
+            <li class="mb-2">
+              <i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>
+              <span data-i18n="skills.python_data">Python: Pandas, NumPy y Matplotlib</span>
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>
+              <span data-i18n="skills.cleaning">Limpieza y transformación de datos</span>
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>
+              <span data-i18n="skills.eda">Análisis exploratorio (EDA)</span>
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>
+              <span data-i18n="skills.etl">Procesos ETL</span>
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>
+              <span data-i18n="skills.excel">Excel avanzado y Power Query</span>
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>
+              <span data-i18n="skills.kpis">Reportes e indicadores (KPIs)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 4. Herramientas y plataformas -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="skill-card h-100 p-4">
+          <div class="skill-icon mb-3">
+            <i class="bi bi-tools" aria-hidden="true"></i>
+          </div>
+          <h3 class="h5 fw-bold mb-3" data-i18n="skills.tools">Herramientas y plataformas</h3>
+          <ul class="list-unstyled text-secondary">
+            <li class="mb-2">
+              <i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>
+              <span data-i18n="skills.git">Git y GitHub</span>
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>
+              <span data-i18n="skills.vscode">Visual Studio Code</span>
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>
+              <span data-i18n="skills.notebooks">Google Colab y Jupyter Notebook</span>
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>
+              <span data-i18n="skills.deployment">Vercel y GitHub Pages</span>
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>
+              <span data-i18n="skills.crm_erp">Sistemas CRM y ERP</span>
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>
+              <span data-i18n="skills.storage">LocalStorage</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 5. Metodologías y procesos -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="skill-card h-100 p-4">
+          <div class="skill-icon mb-3">
+            <i class="bi bi-diagram-3-fill" aria-hidden="true"></i>
+          </div>
+          <h3 class="h5 fw-bold mb-3" data-i18n="skills.methods">Metodologías y procesos</h3>
+          <ul class="list-unstyled text-secondary">
+            <li class="mb-2">
+              <i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>
+              <span data-i18n="skills.scrum">Fundamentos de Scrum</span>
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>
+              <span data-i18n="skills.project">Gestión de proyectos</span>
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>
+              <span data-i18n="skills.documentation">Documentación técnica</span>
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>
+              <span data-i18n="skills.testing">Pruebas funcionales de software</span>
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>
+              <span data-i18n="skills.versioning">Control de versiones</span>
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>
+              <span data-i18n="skills.improvement">Mejora de procesos</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 6. Competencias profesionales -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="skill-card h-100 p-4">
+          <div class="skill-icon mb-3">
+            <i class="bi bi-lightbulb-fill" aria-hidden="true"></i>
+          </div>
+          <h3 class="h5 fw-bold mb-3" data-i18n="skills.soft">Competencias profesionales</h3>
+          <ul class="list-unstyled text-secondary">
+            <li class="mb-2">
+              <i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>
+              <span data-i18n="skills.thinking">Pensamiento analítico</span>
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>
+              <span data-i18n="skills.solving">Resolución de problemas</span>
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>
+              <span data-i18n="skills.communication">Comunicación efectiva</span>
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>
+              <span data-i18n="skills.learning">Aprendizaje continuo</span>
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>
+              <span data-i18n="skills.detail">Atención al detalle</span>
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check2 text-accent me-2" aria-hidden="true"></i>
+              <span data-i18n="skills.customer">Atención y orientación al cliente</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- Proyectos Destacados -->
     <section id="proyectos" class="py-5">
       <div class="container py-4">
         <div class="text-center mb-5">
           <h2 class="section-title">Proyectos Destacados</h2>
-          <p class="text-muted">Casos prácticos de análisis de datos, desarrollo de pipelines y soluciones de BI</p>
+          <p class="text-muted">Proyectos de programación, bases de datos, análisis de información y desarrollo de soluciones tecnológicas.</p>
         </div>
         <div class="row g-4">
           
@@ -160,7 +481,7 @@
               <img loading="lazy" src="assets/portada_modelado_de_datos.png" class="card-img-top project-img project-img-contain" alt="Modelo relacional PostgreSQL del proyecto TDAH laboral LATAM">              
               <div class="card-body p-4 d-flex flex-column">
                 <h3 class="h5 card-title fw-bold">TDAH laboral LATAM: modelado relacional y análisis SQL</h3>
-                <p class="card-text text-secondary">Modelado relacional y análisis exploratorio en PostgreSQL de una encuesta anonimizada a 64 participantes sobre TDAH y situación laboral. Diseñé una base de datos de tres tablas relacionadas mediante claves primarias y foráneas, y desarrollé consultas con filtros, agregaciones, JOINs entre múltiples tablas y subconsultas para explorar patrones demográficos, diagnóstico de TDAH y situación laboral.</p>
+                <p class="card-text text-secondary">Diseñé e implementé una <strong>base de datos relacional en PostgreSQL</strong> para estructurar información anonimizada de <strong>64 participantes</strong> de una encuesta sobre TDAH y situación laboral. Organicé los datos en <strong>tres tablas relacionadas</strong> mediante claves primarias y foráneas, y desarrollé consultas SQL con <strong>JOINs, filtros, agregaciones y subconsultas</strong> para explorar información demográfica, diagnóstica y laboral.</p>
                 <div class="tech-badges mb-3">
                   <span class="badge">SQL</span>
                   <span class="badge">PostgreSQL</span>
@@ -187,11 +508,9 @@
         </h3>
 
         <p class="card-text text-secondary">
-        Análisis exploratorio de una encuesta a 64 participantes sobre TDAH y 
-        situación laboral en Latinoamérica. Desarrollé el flujo completo de 
-        preparación y análisis de datos con Python: anonimización, data profiling, 
-        limpieza, transformación, validación de calidad, análisis exploratorio y 
-        visualización, incluyendo la clasificación temática de respuestas abiertas.
+        Análisis exploratorio de una encuesta anonimizada a <strong>64 participantes</strong> sobre TDAH y situación laboral en Latinoamérica. Desarrollé un flujo de preparación,
+        limpieza, transformación y validación de datos con <strong>Python</strong>, utilizando <strong>Pandas y Matplotlib</strong> para generar
+        visualizaciones, explorar patrones descriptivos y clasificar respuestas abiertas.
         </p>
 
         <div class="tech-badges mb-3">
@@ -230,10 +549,8 @@
         <div class="card-body p-4 d-flex flex-column">
         <h3 class="h5 card-title fw-bold"> Weather Data Explorer | REST API & Serverless
         </h3>
-        <p class="card-text text-secondary"> Aplicación web para consultar, procesar y visualizar datos
-        meteorológicos en tiempo real mediante OpenWeather API. Integra consumo de API REST, procesamiento de JSON, geolocalización y transformación de métricas, utilizando una función serverless en Vercel para proteger las credenciales de acceso.
+        <p class="card-text text-secondary"> Desarrollé una <strong>aplicación web interactiva</strong> para consultar y visualizar información meteorológica mediante la integración de <strong>OpenWeather API</strong>. Implementé solicitudes a una <strong>API REST</strong>, procesamiento de respuestas JSON, geolocalización y conversión de unidades. Incorporé una <strong>función serverless desplegada en Vercel</strong> para gestionar las solicitudes y evitar exponer la clave de acceso a la API en el código del navegador.
         </p>
-
       <div class="tech-badges mb-3">
         <span class="badge">JavaScript</span>
         <span class="badge">REST API</span>
@@ -274,9 +591,9 @@
             <div class="project-card card h-100 border-0 shadow-sm">
               <img loading="lazy" src="assets/Tareas.png" class="card-img-top project-img" alt="To Do List App">
               <div class="card-body p-4 d-flex flex-column">
-                <h3 class="h5 card-title fw-bold">Aplicación de Lista de Tareas + Análisis de Productividad</h3>
+                <h3 class="h5 card-title fw-bold">Aplicación de Gestión de Tareas | JavaScript y Dashboard de Productividad</h3>
                 <p class="card-text text-secondary">
-                  Esta es una aplicación web interactiva y minimalista diseñada para gestionar pendientes diarios de forma eficiente, desarrollada con tecnologías web modernas y desplegada de forma continua.
+                  Desarrollé una aplicación web de <strong>gestión de tareas</strong> con JavaScript, HMTL y CSS, incorporando funcionalidades para agregar, completar y eliminar actividades. Implementé <strong>persistencia mediante LocalStorage</strong> y un panel de indicadores dinámicos que calcula tareas pendientes, completadas y porcentaje de avance, actualizándose automáticamente con cada interacción.
                 </p>
                 <div class="tech-badges mb-3">
                   <span class="badge">HTML5</span>
@@ -381,10 +698,15 @@
       <p class="small text-muted mb-0">© 2026 Alejandra González Madrid · Desarrollado con HTML, CSS & Bootstrap 5</p>
     </div>
   </footer>
+    
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-  <script src="main.js"></script>
+<!-- Biblioteca Typewriter.js -->
+<script src="https://unpkg.com/typewriter-effect@2.21.0/dist/core.js"></script>
+
+<!-- JavaScript personalizado -->
+<script src="main.js"></script>
+
 </body>
-
 </html>

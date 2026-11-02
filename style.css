@@ -22,7 +22,25 @@ section[id] { scroll-margin-top: 90px; }
 .nav-link { color: var(--text-main); font-weight: 500; transition: color .2s ease; }
 .nav-link:hover, .nav-link:focus-visible { color: var(--primary-color); }
 
-.btn-secondary-custom { background: var(--soft-purple); color: var(--primary-color); border: 1px solid transparent; padding: 10px 24px; }
+/* Botón principal */
+.btn-primary-custom {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 10px 24px;
+  font-weight: 600;
+  transition: background-color 0.2s ease,
+              transform 0.2s ease;
+}
+
+.btn-primary-custom:hover {
+  background-color: var(--primary-hover);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.btn-secondary-custom { background: var(--soft-purple); color: var(--primary-color); border: 1px solid transparent; padding: 10px 24px; border-radius: 10px;}
 .btn-secondary-custom:hover { background: var(--border-color); color: var(--primary-hover); }
 
 :where(a, button, .btn, .nav-link):focus-visible { outline: 3px solid var(--accent-color); outline-offset: 3px; }
@@ -70,4 +88,40 @@ section[id] { scroll-margin-top: 90px; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   .profile-img:hover, .skill-card:hover, .project-card:hover, .btn-portfolio:hover { transform: none; }
+}
+
+
+/* Selector de idioma ES / EN */
+
+.language-switcher {
+  white-space: nowrap;
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary, #64748b);
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 5px 7px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: color 0.2s ease,
+              background-color 0.2s ease;
+}
+
+.lang-btn:hover {
+  color: var(--primary-color);
+  background-color: var(--soft-purple);
+}
+
+.lang-btn.active {
+  color: var(--primary-color);
+  font-weight: 700;
+  background-color: var(--soft-purple);
+}
+
+.lang-btn:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 3px;
 }
