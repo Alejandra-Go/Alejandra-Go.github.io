@@ -89,3 +89,39 @@ section[id] { scroll-margin-top: 90px; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   .profile-img:hover, .skill-card:hover, .project-card:hover, .btn-portfolio:hover { transform: none; }
 }
+
+
+/* Selector de idioma ES / EN */
+
+.language-switcher {
+  white-space: nowrap;
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary, #64748b);
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 5px 7px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: color 0.2s ease,
+              background-color 0.2s ease;
+}
+
+.lang-btn:hover {
+  color: var(--primary-color);
+  background-color: var(--soft-purple);
+}
+
+.lang-btn.active {
+  color: var(--primary-color);
+  font-weight: 700;
+  background-color: var(--soft-purple);
+}
+
+.lang-btn:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 3px;
+}
